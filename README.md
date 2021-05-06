@@ -1,5 +1,5 @@
 #  Neural Verification Network (VERNet)
-There are source codes for Neural Quality Estimation with Multiple Hypotheses for GrammaticalError Correction.
+There are source codes for Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction.
 
 ![model](https://github.com/thunlp/VERNet/blob/master/model.png)
 
@@ -13,7 +13,7 @@ There are source codes for Neural Quality Estimation with Multiple Hypotheses fo
 
 
 ## Data and Checkpoint
-* All these files can be downloaded and you should put them in the corresponding folders
+* All these files can be downloaded and you should put them in the corresponding folders.
 * All ``data`` can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/data.zip).
 * The ``checkpoints`` (BERT-VERNet and ELECTRA-VERNet) can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/checkpoints.zip).
 * All ``features`` used in reranking can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/features.zip).
@@ -30,7 +30,7 @@ bash train_electra.sh
 
 
 ## Test Token Level Quality Estimation Ability
-* These experimental results are shown in Table 3 in our paper.
+* These experimental results are shown in Table 3 of our paper.
 * The evaluations are the same as the evaluations of GED models.
 * Go to the ``model`` folder and test BERT-VERNet model or ELECTRA-VERNet model as follow:
 ```
@@ -64,7 +64,7 @@ bash test.sh
 ```
 bash test_electra.sh
 ```
- Using this command, you can rerank beam search candidates and automatically evaluate the model performance on three datasets CoNLL-2014, FCE and JFLEG. For BEA19 evaluation, you should submit the runs to their hidden test [website](https://competitions.codalab.org/competitions/20228):
+ Using this command, you can rerank beam search candidates and automatically evaluate the model performance on three datasets CoNLL-2014, FCE and JFLEG. For BEA19 evaluation, you should submit the runs to their hidden test [website](https://competitions.codalab.org/competitions/20228).
 
 
 
@@ -95,7 +95,7 @@ The results are shown as follows.
 
 ## Citation
 ```
-@inproceedings{liu2020vernet,
+@inproceedings{liu2021vernet,
   title={Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction},
   author={Liu, Zhenghao and Yi, Xiaoyuan and Sun, Maosong and Yang, Liner and Chua, Tat-Seng},
   booktitle={Proceedings of NAACL},

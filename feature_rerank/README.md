@@ -7,3 +7,4 @@
 * ``train_electra.sh``: Process ELECTRA-VERNet features and train Coordinate Ascent models to reweight features.
 * ``test.sh``: Get aggregated score of the features from BERT-VERNet and basic GEC model and automatically evaluate GEC results.
 * ``test_electra.sh``: Get aggregated score of the features from ELECTRA-VERNet and basic GEC model and automatically evaluate GEC results.
+* ``model_bert.txt`` and ``model_electra.txt`` are models of Coordinate Ascent, which incorporate quality estimation scores from BERT-VERNet and ELECTRA-VERNet, respectively.
