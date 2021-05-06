@@ -1,7 +1,7 @@
 #  Neural Verification Network (VERNet)
 There are source codes for Neural Quality Estimation with Multiple Hypotheses for GrammaticalError Correction.
 
-![model](https://github.com/thunlp/VERNet/blob/master/model.pdf)
+![model](https://github.com/thunlp/VERNet/blob/master/model.png)
 
 
 
@@ -13,12 +13,13 @@ There are source codes for Neural Quality Estimation with Multiple Hypotheses fo
 
 
 ## Data and Checkpoint
-* All data can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/data.zip).
-* The chechpoints (BERT-VERNet and ELECTRA-VERNet) can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/checkpoints.zip).
-* All featues used in reranking can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/features.zip).
+* All these files can be downloaded and you should put them in the corresponding folders
+* All ``data`` can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/data.zip).
+* The ``checkpoints`` (BERT-VERNet and ELECTRA-VERNet) can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/checkpoints.zip).
+* All ``features`` used in reranking can be found at [Ali Drive](https://thunlp.oss-cn-qingdao.aliyuncs.com/VERNet/features.zip).
 
 ## Train VERNet
-* VERNet inherits Hugginface Transformers, you can change codes for various pretrained langgua models.
+* VERNet inherits Hugginface Transformers, you can change codes for various pretrained language models.
 * Go to the ``model`` folder and train models with BERT or ELECTRA as follow:
 ```
 bash train.sh
@@ -29,8 +30,8 @@ bash train_electra.sh
 
 
 ## Test Token Level Quality Estimation Ability
-* This experimental results are shown in Table 3 in our paper.
-* The evaluations are same with the evaluations of GED models.
+* These experimental results are shown in Table 3 in our paper.
+* The evaluations are the same as the evaluations of GED models.
 * Go to the ``model`` folder and test BERT-VERNet model or ELECTRA-VERNet model as follow:
 ```
 bash test.sh
@@ -40,7 +41,7 @@ bash test_electra.sh
 ```
 
 ## Rerank Beam Search Candidates
-* First you should go to the ``model`` folder and generate features from BERT-VERNet model or ELECTRA-VERNet model. So run following command:
+* First you should go to the ``model`` folder and generate features from BERT-VERNet model or ELECTRA-VERNet model. So run the following command:
 ```
 bash generate_feature.sh
 ```
@@ -48,7 +49,7 @@ bash generate_feature.sh
 bash generate_feature_electra.sh
 ```
 
-* (Optional Stage for Learning Feature Weight) Second, you can generate ranking features with ``GEC model`` score and ``VERNet`` score, all these results are provided in the ``features`` folder. And then we train leaning-to-rank models with Coordinate Ascent and get weights of ranking features. You should go to the ``feature_rerank`` folder and run following command:
+* (Optional Stage for Learning Feature Weight) Second, you can generate ranking features with the ``GEC model`` score and ``VERNet`` score, all these results are provided in the ``features`` folder. And then we train learning-to-rank models with Coordinate Ascent and get weights of ranking features. You should go to the ``feature_rerank`` folder and run the following command:
 ```
 bash train.sh
 ```
@@ -56,7 +57,7 @@ bash train.sh
 bash train_electra.sh
 ```
 
-* Finally, if you want to test model, you can go to the ``feature_rerank`` folder and run following command:
+* Finally, if you want to test the model, you can go to the ``feature_rerank`` folder and run the following command:
 ```
 bash test.sh
 ```
@@ -68,7 +69,7 @@ bash test_electra.sh
 
 
 ## Results
-The results are shown as follow.
+The results are shown as follows.
 
 |                        | CoNLL2014 (M2) |        |        | CoNLL2014 (ERRANT) |        |        | FCE    |        |        | BEA19  |        |        | JFLEG  |
 |------------------------|----------------|--------|--------|--------------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
@@ -102,9 +103,8 @@ The results are shown as follow.
 }
 ```
 
-```
 ## Contact
-If you have questions, suggestions and bug reports, please email:
+If you have questions, suggestions, and bug reports, please email:
 ```
 liu-zh16@mails.tsinghua.edu.cn
 ```

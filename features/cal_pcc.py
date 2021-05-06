@@ -27,27 +27,6 @@ def test_file(prepath, goldpath):
     print (total_pcc)
 
 print ("-----------------------------")
-'''test_file("conll14.bscore", "conll14.1.fscore")
-test_file("conll14.rr", "conll14.1.fscore")
-test_file("conll14.rc", "conll14.1.fscore")
-test_file("conll14.cr", "conll14.1.fscore")
-test_file("conll14.cc", "conll14.1.fscore")
-
-test_file("conll14.blm", "conll14.1.fscore")
-test_file("conll14.bgqe", "conll14.1.fscore")
-test_file("conll14.bds", "conll14.1.fscore")
-
-
-test_file("conll14.bqe", "conll14.1.fscore")
-test_file("conll14.bdt", "conll14.1.fscore")
-test_file("conll14.bdj", "conll14.1.fscore")
-test_file("conll14.bver", "conll14.1.fscore")
-test_file("conll14.bver.ele", "conll14.1.fscore")
-test_file("conll14.bver", "conll14.0.fscore")
-test_file("conll14.bver", "conll14.1.fscore")
-test_file("fce.bver", "fce.fscore")
-test_file("jfleg.bver", "jfleg.fscore")'''
-
 test_file("conll14.bver", "conll14.0.fscore")
 test_file("conll14.bver", "conll14.1.fscore")
 test_file("fce.bver", "fce.fscore")
@@ -58,9 +37,5 @@ test_file("conll14.bver.ele", "conll14.1.fscore")
 test_file("fce.bver.ele", "fce.fscore")
 test_file("jfleg.bver.ele", "jfleg.fscore")
 print ("-----------------------------")
-test_file("conll14.bver.ablation", "conll14.0.fscore")
-test_file("conll14.bver.ablation", "conll14.1.fscore")
-test_file("fce.bver.ablation", "fce.fscore")
-test_file("jfleg.bver.ablation", "jfleg.fscore")
-print ("-----------------------------")
+
 
