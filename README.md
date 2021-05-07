@@ -10,6 +10,7 @@ There are source codes for Neural Quality Estimation with Multiple Hypotheses fo
 * Pytorch==1.2.0
 * transformers==3.2.0
 * pip3 install errant
+* Clone the ``jfleg`` project from here ``https://github.com/keisks/jfleg``
 
 
 ## Data and Checkpoint
