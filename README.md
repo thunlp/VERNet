@@ -1,8 +1,5 @@
 #  Neural Verification Network (VERNet)
-There are source codes for Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction.
-
-![model](https://github.com/thunlp/VERNet/blob/master/model.png)
-
+There are source codes for Neural Quality Estimation with Multiple Hypotheses for Grammatical Error Correction [Our Paper](https://arxiv.org/pdf/2105.04443.pdf).
 
 
 ## Requirement
